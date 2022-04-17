@@ -1,0 +1,7 @@
+server:
+  port: 8899
+
+spring:
+  banner:
+    image:
+      location: OIP-C.jfif

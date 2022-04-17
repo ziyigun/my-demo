@@ -1,0 +1,19 @@
+server:
+  port: 80
+
+country: china
+party: true
+user:
+  name: ali
+  age: 18
+
+baseDir: c:\win10
+
+#使用${属性名}引用数据
+tempDir: ${basedir}\temp
+
+#创建类，用于封装下面的数据
+#由Spring帮我们去加载数据到对象中，一定要告诉spring加载这组信息
+
+
+

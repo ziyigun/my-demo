@@ -1,0 +1,32 @@
+server:
+  port: 80
+
+
+
+logging:
+  #设置分组
+  group:
+    ebank: com.ali.controller, com.ali.service, com.ali.dao
+    iservice: com.ali
+
+  level:
+    root: info
+    #设置某个包的日志级别
+#    com.ali.controller: debug
+    ebank: debug
+
+#    设置日志模板格式
+  pattern:
+#    console: "%d - %m %n"
+    console: "%d %clr(%5p) --- [%16t] %clr(%-40.40c){cyan} : %m %n"
+
+  file:
+    name: server.log
+  logback:
+    rollingpolicy:
+      max-file-size: 4KB
+      file-name-pattern: server.%d{yyyy-MM-dd}.%i.log
+# %d 是日期， rollingpolicy是滚动日志，到达一定大小，自动新建
+#server.2022-03-22.0.log
+#server.2022-03-22.1.log
+

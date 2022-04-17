@@ -1,0 +1,14 @@
+servers:
+#  ipAddress: 192.168.0.2
+#  I_P_ADD_RESS: 192.168.0.5
+#  烤肉串模式
+  ip-address: 192.168.0.10
+  port: 8080
+  timeout: -1
+  serverTimeOut: 3
+  dataSize: 10MB
+
+datasource:
+  DriverClassName: com.mysql.cj.jdbc.Driver1431
+  password: 0127
+#  password: "0127"   SpringBoot的yaml文件中对数字的书写支持进制的书写格式

@@ -1,0 +1,4 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 2607238083@qq.com
